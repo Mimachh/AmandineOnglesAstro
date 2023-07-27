@@ -1,0 +1,23 @@
+---
+const liensBarreNav = ["Mes réalisations", "Mes prestations", "Ma formation"];
+
+const active = "text-primary border-b-2 border-primary";
+---
+
+<nav class="md:flex items-center justify-between px-6 md:px-8 py-6 relative">
+    <div>
+        <h1 class="text-4xl font-bold text-primary">A</h1>
+    </div>
+    <ul class="hidden space-y-3 pt-3
+        md:flex md:gap-16 md:space-y-0 md:pt-0
+        transition-all duration-150 ease-in
+    ">
+      {liensBarreNav.map((lien, index) => (
+        <li>
+          <a href="#" class={`${active} text-lg font-medium`}>{lien}</a>
+        </li>
+      ))}
+    </ul>
+
+    <div class="fixed top-0 right-0 -translate-x-6 translate-y-8 md:hidden">Toggle</div>
+</nav>

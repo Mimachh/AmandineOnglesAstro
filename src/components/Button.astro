@@ -1,0 +1,179 @@
+<style>
+    .button {
+  position: relative;
+  padding: 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: box-shadow 150ms;
+}
+.button:focus {
+  transition: box-shadow 150ms;
+  box-shadow: 0px 0px 0px 3px #ffffff;
+}
+
+.background-wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: -1;
+}
+
+.background {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.background-1 {
+  animation: background-1-animation 8s infinite;
+  background-image: linear-gradient(
+    165deg,
+    hsl(178, 100%, 44%),
+    hsl(209, 100%, 44%)
+  );
+  border-radius: 5px;
+}
+.background-1:before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 0.6rem;
+  bottom: 0.7rem;
+  right: 0.6rem;
+  background-image: linear-gradient(
+    165deg,
+    hsl(178, 100%, 44%),
+    hsl(209, 100%, 44%)
+  );
+  filter: blur(35px);
+}
+.background-2 {
+  animation: background-2-animation 8s infinite;
+  background-image: linear-gradient(
+    165deg,
+    hsl(0, 84%, 61%),
+    hsl(47, 95%, 57%)
+  );
+  border-radius: 5px;
+}
+.background-2:before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 0.6rem;
+  bottom: 0.7rem;
+  right: 0.6rem;
+  background-image: linear-gradient(
+    165deg,
+    hsl(0, 84%, 61%),
+    hsl(47, 95%, 57%)
+  );
+  filter: blur(35px);
+}
+.background-3 {
+  animation: background-3-animation 8s infinite;
+  background-image: linear-gradient(
+    165deg,
+    hsl(330, 100%, 50%),
+    hsl(270, 67%, 46%)
+  );
+  border-radius: 5px;
+}
+.background-3:before {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  left: 0.6rem;
+  bottom: 0.7rem;
+  right: 0.6rem;
+  background-image: linear-gradient(
+    165deg,
+    hsl(330, 100%, 50%),
+    hsl(270, 67%, 46%)
+  );
+  filter: blur(35px);
+}
+
+.button-text {
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  margin: 1px;
+  border-radius: 5px;
+  padding: 0.75rem 3rem;
+  font-family: "Inter";
+  font-size: 1rem;
+  transition: all 100ms;
+}
+
+.button:hover .button-text {
+  transition: all 100ms;
+  background-color: transparent;
+  color: black;
+}
+
+@keyframes background-1-animation {
+  0%,
+  16.667%,
+  to {
+    opacity: 1;
+  }
+
+  33%,
+  83.333% {
+    opacity: 0;
+  }
+}
+
+@keyframes background-2-animation {
+  0%,
+  16.667%,
+  66.667%,
+  to {
+    opacity: 0;
+  }
+
+  33.333%,
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes background-3-animation {
+  0%,
+  50%,
+  to {
+    opacity: 0;
+  }
+
+  66.667%,
+  83.333% {
+    opacity: 1;
+  }
+}
+
+</style>
+<a href="mailto:gorsseamandinedu72@gmail.com"
+  class="text-sm md:text-md font-bold"
+>
+  <button class="button">
+      <!-- background colors -->
+      <div class="background-wrapper">
+        <div class="background background-1"></div>
+        <div class="background background-2"></div>
+        <div class="background background-3"></div>
+      </div>
+    
+      <!-- black background and the text -->
+      <div class="button-text bg-dark font-quicksand">Me contacter</div>
+  </button>
+</a>

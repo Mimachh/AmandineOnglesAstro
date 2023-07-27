@@ -1,0 +1,25 @@
+---
+import { Galerie } from '../components/Galerie';
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro'
+import Menu from '../components/Menu.astro'
+import { Footer } from '../components/Footer'
+---
+
+<Layout title="Amandine Gorsse || Nail Art || Prothésie Ongulaire.">
+	<main class="max-w-[1400px] mx-auto">
+		
+		<Menu />
+		<Galerie client:load />
+	
+		<!-- <section>
+			Prestationsnpm
+		</section> -->
+	
+		<!-- <section>
+			Formation
+			Framer ou CSS
+		</section>  -->
+		<Footer />
+	</main>
+</Layout>
