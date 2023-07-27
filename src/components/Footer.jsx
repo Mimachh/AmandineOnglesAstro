@@ -1,6 +1,6 @@
 import React from 'react'
-import { BsInstagram, BsFacebook, BsLinkedin } from 'react-icons/bs';
-
+import { BsInstagram, BsLinkedin } from 'react-icons/bs';
+import {FaFacebook } from 'react-icons/fa'
 
 export const Footer = () => {
   return (
@@ -12,7 +12,7 @@ export const Footer = () => {
         <span><BsInstagram className='w-8 h-8 text-lightk cursor-pointer
         hover:text-primaryDark hover:translate-y-[-3px] transition-all duration-150 ease
         ' /></span>
-        <span><BsFacebook className='w-8 h-8 text-light cursor-pointer
+        <span><FaFacebook className='w-8 h-8 text-light cursor-pointer
         hover:text-primaryDark hover:translate-y-[-3px] transition-all duration-150 ease
         ' /></span>
         <span><BsLinkedin className='w-8 h-8 text-light cursor-pointer
