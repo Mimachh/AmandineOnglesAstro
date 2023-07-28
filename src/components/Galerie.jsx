@@ -27,7 +27,7 @@ const photos = {
     8: photo8,
     9: photo9,
     10: photo10,
-    11: photo11,
+    // 11: photo11,
     12: photo12,
 }
 
