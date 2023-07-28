@@ -106,7 +106,7 @@ export const Galerie = () => {
                   stiffness: 100,
                 }}
                 onClick={() => handleImageClick(photos[key])}
-                priority                
+                priority='true'                
               />
             </motion.div>
           ))}
