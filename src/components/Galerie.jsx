@@ -94,7 +94,7 @@ export const Galerie = () => {
                 width="384"
                 height="683"
                 sizes="(max-width: 768px) 300px, (max-width: 1200px) 768px, 1200px"
-                className='w-full h-auto rounded-md shadow cursor-pointer '
+                className='w-full h-auto rounded-md shadow cursor-pointer aspect-auto'
                 alt="Photo prothésiste ongulaire"
                 fill
                 whileHover={{
