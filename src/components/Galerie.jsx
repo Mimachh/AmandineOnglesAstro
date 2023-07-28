@@ -107,6 +107,7 @@ export const Galerie = () => {
                 }}
                 onClick={() => handleImageClick(photos[key])}
                 priority
+                fetchpriority="high"
                 
               />
             </motion.div>
