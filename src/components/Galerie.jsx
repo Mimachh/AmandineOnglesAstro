@@ -83,7 +83,7 @@ export const Galerie = () => {
           variants={divImage}
           whileInView="animate"
         >
-          {Object.keys(photos).map((key) => (
+          {Object.keys(photos).map((key, index) => (
             <motion.div
               className="flex justify-center"
               variants={imageGalerie}
@@ -106,7 +106,8 @@ export const Galerie = () => {
                   stiffness: 100,
                 }}
                 onClick={() => handleImageClick(photos[key])}
-                loading="lazy"
+                priority
+                
               />
             </motion.div>
           ))}
