@@ -93,7 +93,6 @@ export const Galerie = () => {
                 src={photos[key]}
                 width="384"
                 height="683"
-                sizes="(max-width: 768px) 300px, (max-width: 1200px) 768px, 1200px"
                 className='w-full h-auto rounded-md shadow cursor-pointer '
                 alt="Photo prothésiste ongulaire"
                 fill
