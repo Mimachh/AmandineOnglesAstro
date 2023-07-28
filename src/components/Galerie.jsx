@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState } from 'react'
 
 import { motion } from 'framer-motion';
 
@@ -68,12 +68,7 @@ export const Galerie = () => {
     const handleImageClick = (imageSrc) => {
       setSelectedImage(imageSrc);
     };
-  
-    const handleMouseDown = (event) => {
-      if (ref.current && !ref.current.contains(event.target)) {
-        setSelectedImage(null);
-      }
-    };
+
   
     return (
       <section className='container mx-auto px-4 h-fit md:py-16 pb-8 relative'>
