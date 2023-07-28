@@ -2,18 +2,18 @@ import React, { useRef, useState, useEffect } from 'react'
 
 import { motion } from 'framer-motion';
 
-import photo1 from '../images/1.jpg'
-import photo2 from '../images/2.jpg'
-import photo3 from '../images/3.jpg'
-import photo4 from '../images/4.jpg'
-import photo5 from '../images/5.jpg'
-import photo6 from '../images/6.jpg'
-import photo7 from '../images/7.jpg'
-import photo8 from '../images/8.jpg'
-import photo9 from '../images/9.jpg'
-import photo10 from '../images/10.jpg'
-import photo11 from '../images/11.jpg'
-import photo12 from '../images/12.jpg'
+import photo1 from '../images/1.webp'
+import photo2 from '../images/2.webp'
+import photo3 from '../images/3.webp'
+import photo4 from '../images/4.webp'
+import photo5 from '../images/5.webp'
+import photo6 from '../images/6.webp'
+import photo7 from '../images/7.webp'
+import photo8 from '../images/8.webp'
+import photo9 from '../images/9.webp'
+import photo10 from '../images/10.webp'
+import photo11 from '../images/11.webp'
+import photo12 from '../images/12.webp'
 
 
 const photos = {
@@ -91,9 +91,11 @@ export const Galerie = () => {
             >
               <motion.img
                 src={photos[key]}
-                width="40"
+                width="100"
+                height="200"
                 className='w-full h-auto rounded-md shadow cursor-pointer '
-                alt="Astro"
+                alt="Photo prothésiste ongulaire"
+                fill
                 whileHover={{
                   y: -10,
                 }}
